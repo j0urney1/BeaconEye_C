@@ -1,0 +1,10 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v150\Platforms\x64\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  main.c
+E:\source\repos\BeaconEye_C\BeaconEye_C\main.c(203): warning C4047: '!=': 'ULONGLONG' differs in levels of indirection from 'void *'
+E:\source\repos\BeaconEye_C\BeaconEye_C\main.c(212): warning C4022: 'NtQueryVirtualMemory': pointer mismatch for actual parameter 2
+main.obj : error LNK2001: unresolved external symbol NtQueryVirtualMemory
+main.obj : error LNK2001: unresolved external symbol NtQuerySystemInformation
+main.obj : error LNK2001: unresolved external symbol NtQueryInformationProcess
+main.obj : error LNK2001: unresolved external symbol RtlGetNativeSystemInformation
+main.obj : error LNK2001: unresolved external symbol RtlAdjustPrivilege
+E:\source\repos\BeaconEye_C\x64\Release\BeaconEye_C.exe : fatal error LNK1120: 5 unresolved externals
