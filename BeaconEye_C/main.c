@@ -476,7 +476,7 @@ int wmain()
 		for (tokenInfo = buffer; tokenInfo->NextEntryOffset; tokenInfo = (PSYSTEM_PROCESS_INFORMATION)((PBYTE)tokenInfo + tokenInfo->NextEntryOffset))
 		{
 
-			hProcess = OpenProcess(PROCESS_VM_READ | PROCESS_QUERY_LIMITED_INFORMATION | PROCESS_ALL_ACCESS, FALSE, PtrToUlong(tokenInfo->UniqueProcessId));
+			hProcess = OpenProcess(PROCESS_VM_READ | PROCESS_QUERY_LIMITED_INFORMATION, FALSE, PtrToUlong(tokenInfo->UniqueProcessId));
 
 			if (hProcess)
 			{
